@@ -25,30 +25,39 @@ const Home: NextPage = () => {
           backgroundColor: lightMode ? "#fff" : " #2B343B",
           color: lightMode ? "#2B343B" : " #fff",
           borderRadius: "20px",
-          padding: "30px 200px !important ",
+          padding: "15px 250px 10px 250px !important ",
           marginTop: "10px",
         }}
       >
-        <Box
-          component="img"
-          sx={{
-            width: "100%",
-            borderRadius: "20px",
-          }}
-          alt="The house from the offer."
-          src="https://i.picsum.photos/id/1022/6000/3376.jpg?hmac=FBA9Qbec8NfDlxj8xLhV9k3DQEKEc-3zxkQM-hmfcy0"
-        />
+        <div style={{ position: "relative" }}>
+          <Box
+            component="img"
+            sx={{
+              width: "100%",
+              borderRadius: "20px",
+            }}
+            alt="The house from the offer."
+            src="https://media.istockphoto.com/photos/aurora-borealis-or-northern-lights-in-norway-picture-id615491800?k=20&m=615491800&s=612x612&w=0&h=rSc4EPuNnl8KKnFCQaT905sU_aoXG_5pgx27l3MTLXs="
+          />
+          <div
+            style={{
+              position: "absolute",
+              right: 0,
+              left: 0,
+              bottom: 0,
+              width: "100%",
+              textAlign: "center",
+              color: "#fff",
+            }}
+          >
+            <h4> شَفَق قُطبی</h4>
+          </div>
+        </div>
         <Typography>
-          شفق‌های قطبی نورهای زیبایی‌اند که به‌طور طبیعی در آسمان دیده می‌شوند و
-          معمولاً در شب و در عرض‌های جغرافیایی قطبی به چشم می‌خورند. آن‌ها در
-          یونوسفر تشکیل می‌شوند و در سپیده‌دم قطبی رویت پذیرند. در عرض جغرافیایی
-          قطب شمال به آن‌ها شفق‌های شمالی نیز گفته می‌شود که در سال ۱۶۲۱ توسط
-          پیر گاسندی روی این پدیده طبیعی نهاده شد. به شفق‌های قطبی، نور قطب شمال
-          هم گفته می‌شود زیرا آن‌ها غالباً در نیم کرهٔ شمالی دیده می‌شوند و
-          هرقدر به قطب شمال نزدیک می‌شوید با توجه به مجاورت با قطب مغناطیسی
-          شمالی زمین احتمال بیشتری می‌رود که بتوانید آن‌ها را ببینید. برای
-          نمونه، در شمال شبه جزیره اسکاندیناوی، ایسلند، گرینلند و همین طور در
-          آلاسکا و شهرهای شمالی کانادا و روسیه امکان رویت آن‌ها بسیار زیاد است.
+          شَفَق قُطبی یکی از پدیده‌های جوی کرهٔ زمین است. شفق قطبی پدیدهٔ ظهور
+          نورهای رنگین و متحرک در آسمان شب است و معمولاً در عرض‌های نزدیک به دو
+          قطب زمین بر اثر برخورد ذرات باردارِ بادِ خورشیدی و یونیزه شدن
+          مولکول‌های موجود در یون‌سپهر (یونوسفر) زمین به وجود می‌آید.
         </Typography>
         <Grid
           sx={{
@@ -58,7 +67,7 @@ const Home: NextPage = () => {
           <Button
             variant="contained"
             size="small"
-            sx={{ fontSize: "15px", width: "20%" }}
+            sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
             <Link
               href="/aboutUs"

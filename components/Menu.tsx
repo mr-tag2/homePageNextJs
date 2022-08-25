@@ -7,8 +7,7 @@ import Switch from "@mui/material/Switch";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import NightlightIcon from "@mui/icons-material/Nightlight";
-import PersonIcon from "@mui/icons-material/Person";
+import ModeNightIcon from '@mui/icons-material/ModeNight';import PersonIcon from "@mui/icons-material/Person";
 import { RootContext, _RootContextType } from "../contexts/context";
 
 const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
@@ -81,7 +80,7 @@ const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
               inputProps={{ "aria-label": "controlled" }}
             />
             <Typography>
-              <NightlightIcon
+              <ModeNightIcon
                 fontSize="small"
                 color={lightMode ? undefined : "warning"}
               />

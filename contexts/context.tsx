@@ -28,6 +28,8 @@ export const RootContextProvider: FC<PropsProvider> = ({ children }) => {
         style={{
           backgroundColor: lightMode ? "#F5F5F5" : " #1E272E",
           padding: "5px",
+          height: "100vh",
+          width: "100vw",
         }}
       >
         {children}

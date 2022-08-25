@@ -37,7 +37,7 @@ const AboutUs: NextPage = () => {
                 borderRadius: "20px",
               }}
               alt="The house from the offer."
-              src="https://images.unsplash.com/photo-1537989036885-80b4d200958d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+              src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
             />
           </Grid>
           <Grid
@@ -49,7 +49,6 @@ const AboutUs: NextPage = () => {
               justifyContent: "center",
               alignItems: "center",
               padding: "50px",
-              gap: "20px",
             }}
           >
             <h1>درباره ما</h1>
@@ -69,7 +68,7 @@ const AboutUs: NextPage = () => {
           <Button
             variant="outlined"
             size="small"
-            sx={{ fontSize: "15px", width: "20%" }}
+            sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
             <Link
               href="/"

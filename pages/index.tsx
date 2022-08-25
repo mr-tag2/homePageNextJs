@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { theme } from "../utils/theme";
 import Menu from "../components/Menu";
-import Link from "@mui/material/Link";
+import Link from "next/link";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import { RootContext, _RootContextType } from "../contexts/context";
 
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Menu currentPage="" />
+      <Menu currentPage="/" />
       <Container
         maxWidth="lg"
         sx={{
@@ -69,22 +69,21 @@ const Home: NextPage = () => {
             size="small"
             sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
-            <Link
-              href="/aboutUs"
-              underline="none"
-              color=""
-              sx={{
-                fontSize: "15px",
-                display: "flex",
-                flexWrap: "wrap",
-                alignContent: "center",
-                justifyContent: "center",
-                alignItems: "center",
-                gap: "10px",
-              }}
-            >
-              درباره ما
-              <ArrowCircleLeftIcon />
+            <Link href="/aboutUs">
+              <div
+                style={{
+                  fontSize: "15px",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignContent: "center",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                درباره ما
+                <ArrowCircleLeftIcon />
+              </div>
             </Link>
           </Button>
         </Grid>

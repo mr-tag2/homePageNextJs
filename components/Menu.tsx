@@ -2,13 +2,14 @@ import { ChangeEvent, FC, useContext } from "react";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
 import Switch from "@mui/material/Switch";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import ModeNightIcon from '@mui/icons-material/ModeNight';import PersonIcon from "@mui/icons-material/Person";
+import ModeNightIcon from "@mui/icons-material/ModeNight";
+import PersonIcon from "@mui/icons-material/Person";
 import { RootContext, _RootContextType } from "../contexts/context";
+import Link from "next/link";
 
 const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
   const { lightMode, setLightMode } = useContext(
@@ -21,7 +22,6 @@ const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
   ) => {
     setLightMode(checked);
   };
-
   return (
     <Container
       maxWidth="lg"
@@ -44,21 +44,27 @@ const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
             gap: "20px",
           }}
         >
-          <Link
-            href="/"
-            color={currentPage == "" ? "blue" : "inherit"}
-            underline="none"
-            sx={{ fontSize: "15px" }}
-          >
-            صفحه نخست
+          <Link href="/">
+            <span
+              style={{
+                fontSize: "15px",
+                color: currentPage == "/" ? "#187DF1" : "unset",
+                cursor: "pointer",
+              }}
+            >
+              صفحه نخست
+            </span>
           </Link>{" "}
-          <Link
-            href="/aboutUs"
-            color={currentPage == "aboutUs" ? "blue" : "inherit"}
-            underline="none"
-            sx={{ fontSize: "15px" }}
-          >
-            درباره ما
+          <Link href="/aboutUs">
+            <span
+              style={{
+                fontSize: "15px",
+                color: currentPage == "aboutUs" ? "#187DF1" : "unset",
+                cursor: "pointer",
+              }}
+            >
+              درباره ما
+            </span>
           </Link>
         </Grid>
         <Grid xs={2}>

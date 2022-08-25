@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { ThemeProvider } from "@mui/material";
 import type { NextPage } from "next";
 import { theme } from "../utils/theme";
-import Link from "@mui/material/Link";
 import Menu from "../components/Menu";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -11,6 +10,7 @@ import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import Container from "@mui/material/Container";
 
 import { RootContext, _RootContextType } from "../contexts/context";
+import Link from "next/link";
 
 const AboutUs: NextPage = () => {
   const { lightMode } = useContext(RootContext) as _RootContextType;
@@ -70,21 +70,21 @@ const AboutUs: NextPage = () => {
             size="small"
             sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
-            <Link
-              href="/"
-              underline="none"
-              sx={{
-                fontSize: "15px",
-                display: "flex",
-                flexWrap: "wrap",
-                alignContent: "center",
-                justifyContent: "center",
-                alignItems: "center",
-                gap: "10px",
-              }}
-            >
-              <ArrowCircleRightIcon />
-              صفحه اصلی
+            <Link href="/">
+              <div
+                style={{
+                  fontSize: "15px",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignContent: "center",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <ArrowCircleRightIcon />
+                صفحه اصلی
+              </div>
             </Link>
           </Button>
         </Grid>

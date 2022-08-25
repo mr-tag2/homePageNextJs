@@ -47,7 +47,7 @@ const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
         >
           <Link
             href="/"
-            color={currentPage == "" ? "inherit" : "blue"}
+            color={currentPage == "" ? "blue" : "inherit"}
             underline="none"
             sx={{ fontSize: "15px" }}
           >
@@ -55,7 +55,7 @@ const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
           </Link>{" "}
           <Link
             href="/aboutUs"
-            color={currentPage == "aboutUs" ? "inherit" : "blue"}
+            color={currentPage == "aboutUs" ? "blue" : "inherit"}
             underline="none"
             sx={{ fontSize: "15px" }}
           >

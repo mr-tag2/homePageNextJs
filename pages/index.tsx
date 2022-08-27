@@ -37,7 +37,7 @@ const Home: NextPage = () => {
               borderRadius: "20px",
             }}
             alt="The house from the offer."
-            src="https://media.istockphoto.com/photos/aurora-borealis-or-northern-lights-in-norway-picture-id615491800?k=20&m=615491800&s=612x612&w=0&h=rSc4EPuNnl8KKnFCQaT905sU_aoXG_5pgx27l3MTLXs="
+            src="img/home.jpg"
           />
           <div
             style={{
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
             size="small"
             sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
-            <Link href="/aboutUs" as={process.env.BACKEND_URL + "/aboutUs"}>
+            <Link href="/aboutUs">
               <div
                 style={{
                   fontSize: "15px",

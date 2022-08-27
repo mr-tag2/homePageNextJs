@@ -44,7 +44,7 @@ const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
             gap: "20px",
           }}
         >
-          <Link href="/" as={process.env.BACKEND_URL + "/"}>
+          <Link href="/">
             <span
               style={{
                 fontSize: "15px",
@@ -55,7 +55,7 @@ const Menu: FC<{ currentPage: string }> = ({ currentPage }) => {
               صفحه نخست
             </span>
           </Link>{" "}
-          <Link href="/aboutUs" as={process.env.BACKEND_URL + "/aboutUs"}>
+          <Link href="/aboutUs">
             <span
               style={{
                 fontSize: "15px",

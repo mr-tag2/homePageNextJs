@@ -37,7 +37,7 @@ const AboutUs: NextPage = () => {
                 borderRadius: "20px",
               }}
               alt="The house from the offer."
-              src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+              src="img/about.avif"
             />
           </Grid>
           <Grid
@@ -70,7 +70,7 @@ const AboutUs: NextPage = () => {
             size="small"
             sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
-            <Link href="/" as={process.env.BACKEND_URL + "/"}>
+            <Link href="/">
               <div
                 style={{
                   fontSize: "15px",

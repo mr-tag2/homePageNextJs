@@ -70,7 +70,7 @@ const AboutUs: NextPage = () => {
             size="small"
             sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
-            <Link href="/">
+            <Link href="/" as={process.env.BACKEND_URL + "/"}>
               <div
                 style={{
                   fontSize: "15px",

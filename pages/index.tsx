@@ -69,7 +69,7 @@ const Home: NextPage = () => {
             size="small"
             sx={{ fontSize: "15px", width: "20%", marginTop: "20px" }}
           >
-            <Link href="/aboutUs">
+            <Link href="/aboutUs" as={process.env.BACKEND_URL + "/aboutUs"}>
               <div
                 style={{
                   fontSize: "15px",

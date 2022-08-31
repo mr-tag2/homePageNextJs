@@ -23,3 +23,5 @@ And it has a dark and light theme
 ## aboutUs Dark
 
 ![](public/img/README/aboutUsDark.png)
+
+ReactJs - NextJs - TypeScript - MUI
